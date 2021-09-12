@@ -11,6 +11,10 @@
     --vermelho-escuro: #A83636;
 }
 
+.nav-link-button{
+    color: white;
+}
+
 .navbar-nav .nav-item .nav-link-menu {
     position: relative;
     margin: 0 1rem;
