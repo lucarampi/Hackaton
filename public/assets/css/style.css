@@ -6,15 +6,6 @@
     text-justify: auto;
 }
 
-body {
-    color: #5a5a5a;
-    overflow-x: hidden;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 :root {
     --cinza-claro: rgb(80, 80, 80);
     --branco: #fff;
@@ -22,45 +13,13 @@ html {
     --vermelho-escuro: #A83636;
 }
 
-
-/*** 
-  =============================================
-      Custom navbar
-  =============================================
-  ***/
-
-.navbar-nav .nav-item .nav-link {
-    position: relative;
-    margin: 0 1rem;
-    color: #815656;
+body {
+    color: #5a5a5a;
+    overflow-x: hidden;
 }
 
-.nav-link::after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    border-radius: 80%;
-    box-shadow: 1px 1px 3px #c93936;
-    background-color: #c93936;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .3s ease;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1.1);
-}
-
-.navbar-toggler {
-    width: 12%;
-    margin-right: 2%;
-    color: #c93936 !important;
-    background-color: #c93936 !important;
-    box-shadow: 3px 3px 5px black !important;
-
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -76,12 +35,11 @@ html {
 
 }
 
-
 /*** 
   =============================================
-      Custom area icon-box index
+    Custom area icon-box index
   =============================================
-  ***/
+***/
 
 .working-area .single-working-item .icon-box {
     background: rgb(253, 89, 89) none repeat scroll 0 0;
@@ -112,7 +70,6 @@ html {
 .small-caps {
     font-variant: small-caps;
 }
-
 
 .working-area .single-working-item .icon-box .icon:hover {
     background: rgb(245, 87, 87) none repeat scroll 0 0;
@@ -164,6 +121,32 @@ html {
     width: 70%;
 }
 
+/*** 
+  =============================================
+    Custom scrolltop
+  =============================================
+***/
+
+.scroll-to-top img {
+    background: #fcfcfc;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    bottom: 25px;
+    cursor: pointer;
+    height: 45px;
+    position: fixed;
+    padding: 3px;
+    right: 10px;
+    transition: all 500ms ease 0s;
+    width: 45px;
+    box-shadow: 0px 8px 23px -6px black;
+}
+
+.scroll-to-top img:hover {
+    border: 2px solid #000000;
+    color: #fff;
+    background: #000000;
+}
 
 /*** 
 =============================================
@@ -185,10 +168,13 @@ html {
     background-color: rgba(5, 0, 0, 0.698);
     box-shadow: 0px 8px 23px -6px black;
     font-weight: 400;
-
 }
 
-/*custom scrollbar below*/
+/*** 
+=============================================
+    Custom scrollbar below
+=============================================
+***/
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -206,115 +192,11 @@ html {
     background: #000000;
 }
 
-/*custom whatsapp button*/
-
-.whatsapp-ico {
-    fill: rgb(255, 255, 255);
-    width: 45px;
-    height: 45px;
-    padding: 3px;
-    background-color: #008b17;
-    color: white;
-    border-radius: 50%;
-    transition: all 500ms ease 0s;
-    box-shadow: 0px 8px 23px -6px black;
-    position: fixed;
-    bottom: 90px;
-    right: 10px;
-}
-
-.whatsapp-ico:hover {
-    border: 2px solid #c93936;
-    color: #fff;
-    background: #c93936;
-    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
-}
-
 /*** 
 =============================================
-    Custom icons
+    Form
 =============================================
 ***/
-
-.fa-mouse-pointer {
-    margin: 5px;
-    color: #ffffff;
-}
-
-.fa-home,
-.fa-search,
-.fa-handshake,
-.fa-users,
-.fa-question {
-    margin: 5px;
-    color: #c93936;
-}
-
-/*** 
-=============================================
-    Custom footer
-=============================================
-***/
-
-.footer-content {
-    background-color: #c93936;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    text-align: center;
-}
-
-.footer-content ul li {
-    list-style: none;
-}
-
-#logofooter {
-    margin-left: 3%;
-    width: 21%;
-}
-
-.socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.socials a {
-    color: white;
-}
-
-.socials img {
-    margin-top: 40%;
-}
-
-
-.contact img {
-    width: 10%;
-    height: 8%;
-    padding: 2%;
-
-}
-
-.contact a {
-    margin-top: 10%;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-
-.contact a:hover {
-    color: #ffffff;
-}
-
-/*** 
-=============================================
-    Start Form
-=============================================
-***/
-
-/* Form */
 
 .border-boder {
     background-color: var(--vermelho-predominante);
@@ -346,38 +228,54 @@ html {
 
 /*** 
 =============================================
-    End Form
+    Custom whatsapp buttom
 =============================================
 ***/
 
-
-
-
-/*** 
-  =============================================
-      Custom scrolltop
-  =============================================
-  ***/
-
-.scroll-to-top img {
-    background: #fcfcfc;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    bottom: 25px;
-    cursor: pointer;
-    height: 45px;
-    position: fixed;
-    padding: 3px;
-    right: 10px;
-    transition: all 500ms ease 0s;
+.whatsapp-ico {
+    fill: rgb(255, 255, 255);
     width: 45px;
+    height: 45px;
+    padding: 3px;
+    background-color: #008b17;
+    color: white;
+    border-radius: 50%;
+    transition: all 500ms ease 0s;
     box-shadow: 0px 8px 23px -6px black;
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
 }
 
-.scroll-to-top img:hover {
-    border: 2px solid #000000;
+.whatsapp-ico:hover {
+    border: 2px solid #c93936;
     color: #fff;
-    background: #000000;
+    background: #c93936;
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+}
+
+/*** 
+=============================================
+    Tabs
+=============================================
+***/
+
+.nav-tabs {
+    text-align: center;
+    border-bottom: 1px solid var(--vermelho-predominante)!important;
+}
+
+.nav-link { 
+    color:var(--vermelho-predominante)!important;
+    width: calc(936px / 4);
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff!important;
+    background-color: var(--vermelho-predominante)!important;
+}
+.nav-tabs .nav-link.active {
+    color: rgb(44, 44, 44);
 }
 
 /*** 
@@ -404,12 +302,6 @@ html {
     }
 }
 
-@media screen and (min-width:768px) {
-    .navbar-expand-md>.container {
-        flex-direction: column;
-    }
-}
-
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
@@ -417,11 +309,6 @@ html {
 }
 
 @media screen and (max-width: 720px) {
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-    }
-
     ::-webkit-scrollbar {
         display: none;
     }
