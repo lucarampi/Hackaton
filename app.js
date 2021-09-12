@@ -9,14 +9,11 @@ mongoose.connect(credentials.db.mongoDB.host, { useNewUrlParser: true, useUnifie
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname, 'views');
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static("public"));
 
-
 app.use('/', router)
-
-
 
 //CONEXÃO COM O SERVIDOR
 app.listen(credentials.app.port, () => {
