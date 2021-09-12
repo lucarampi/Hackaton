@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-justify: auto;
+}
+
+body {
+    color: #5a5a5a;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cinza-claro: rgb(80, 80, 80);
+    --branco: #fff;
+    --vermelho-predominante: #FF5757;
+    --vermelho-escuro: #A83636;
+}
+
+
+/*** 
+  =============================================
+      Custom navbar
+  =============================================
+  ***/
+
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    margin: 0 1rem;
+    color: #815656;
+}
+
+.nav-link::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-radius: 80%;
+    box-shadow: 1px 1px 3px #c93936;
+    background-color: #c93936;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1.1);
+}
+
+.navbar-toggler {
+    width: 12%;
+    margin-right: 2%;
+    color: #c93936 !important;
+    background-color: #c93936 !important;
+    box-shadow: 3px 3px 5px black !important;
+
+}
+
+
+/*** 
+=============================================
+    Working Area style index
+=============================================
+***/
+
+.working-area .sec-title p {
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+
+/*** 
+  =============================================
+      Custom area icon-box index
+  =============================================
+  ***/
+
+.working-area .single-working-item .icon-box {
+    background: rgb(253, 89, 89) none repeat scroll 0 0;
+    border: 1px solid #f7f7f7;
+    border-radius: 50%;
+    display: block;
+    height: 180px;
+    padding: 9px;
+    position: relative;
+    width: 180px;
+    margin: 0 auto;
+    transition: all 500ms ease;
+}
+
+.working-area .single-working-item .icon-box .icon {
+    background: rgb(253, 134, 134) none repeat scroll 0 0;
+    border-radius: 50%;
+    display: block;
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    line-height: 160px;
+    color: #056367;
+    font-size: 50px;
+    transition: all 500ms ease;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+
+.working-area .single-working-item .icon-box .icon:hover {
+    background: rgb(245, 87, 87) none repeat scroll 0 0;
+}
+
+.working-area .single-working-item .icon-box .count {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #f7f7f7;
+    border-radius: 50%;
+    display: block;
+    height: 45px;
+    left: 5px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 45px;
+    transition: all 500ms ease;
+}
+
+.working-area .single-working-item .icon-box .count h3 {
+    color: #252525;
+    font-size: 18px;
+    line-height: 45px;
+    font-weight: 700;
+    transition: all 500ms ease;
+}
+
+.working-area .single-working-item .text-box h3 {
+    color: #252525;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 21px 0 9px;
+}
+
+.working-area .single-working-item:hover .icon-box {
+    background: #c93936;
+}
+
+.working-area .single-working-item:hover .icon-box .count {
+    background: #c93936;
+}
+
+.working-area .single-working-item:hover .icon-box .count h3 {
+    color: #fff;
+}
+
+.flaticon-people img {
+    width: 70%;
+}
+
+
+/*** 
+=============================================
+    Featurettes
+=============================================
+***/
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.featurette-background {
+    background-color: rgba(5, 0, 0, 0.698);
+    box-shadow: 0px 8px 23px -6px black;
+    font-weight: 400;
+
+}
+
+/*custom scrollbar below*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c93936;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+/*custom whatsapp button*/
+
+.whatsapp-ico {
+    fill: rgb(255, 255, 255);
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+    background-color: #008b17;
+    color: white;
+    border-radius: 50%;
+    transition: all 500ms ease 0s;
+    box-shadow: 0px 8px 23px -6px black;
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+}
+
+.whatsapp-ico:hover {
+    border: 2px solid #c93936;
+    color: #fff;
+    background: #c93936;
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+}
+
+/*** 
+=============================================
+    Custom icons
+=============================================
+***/
+
+.fa-mouse-pointer {
+    margin: 5px;
+    color: #ffffff;
+}
+
+.fa-home,
+.fa-search,
+.fa-envelope,
+.fa-users,
+.fa-question {
+    margin: 5px;
+    color: #c93936;
+}
+
+/*** 
+=============================================
+    Custom footer
+=============================================
+***/
+
+.footer-content {
+    background-color: #c93936;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content ul li {
+    list-style: none;
+}
+
+#logofooter {
+    margin-left: 3%;
+    width: 21%;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials a {
+    color: white;
+}
+
+.socials img {
+    margin-top: 40%;
+}
+
+
+.contact img {
+    width: 10%;
+    height: 8%;
+    padding: 2%;
+
+}
+
+.contact a {
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.contact a:hover {
+    color: #ffffff;
+}
+
+/*** 
+=============================================
+    Start Form
+=============================================
+***/
+
+/* Form */
+
+.border-boder {
+    background-color: var(--vermelho-predominante);
+    margin: 0 auto;
+    height: 2px;
+    width: 100px;
+}
+
+.form-home-page {
+    background-color: var(--vermelho-predominante);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 0 70px 0;
+    color: var(--branco);
+    width: 100%;
+}
+
+.form-home-page iframe {
+    max-height: 325px;
+    width: 100%;
+}
+
+.btn-form-submit {
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    width: 100%;
+    border: none;
+}
+
+/*** 
+=============================================
+    End Form
+=============================================
+***/
+
+
+
+
+/*** 
+  =============================================
+      Custom scrolltop
+  =============================================
+  ***/
+
+.scroll-to-top img {
+    background: #fcfcfc;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    bottom: 25px;
+    cursor: pointer;
+    height: 45px;
+    position: fixed;
+    padding: 3px;
+    right: 10px;
+    transition: all 500ms ease 0s;
+    width: 45px;
+    box-shadow: 0px 8px 23px -6px black;
+}
+
+.scroll-to-top img:hover {
+    border: 2px solid #000000;
+    color: #fff;
+    background: #000000;
+}
+
+/*** 
+=============================================
+    Responsive CSS
+=============================================
+***/
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .navbar-expand-md>.container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .collapse,
+    .navbar {
+        background-color: white !important;
+    }
+
+}

@@ -9,10 +9,10 @@ router.get('/', campaignController.redirect)
 router.get('/praia-limpa', campaignController.get_main_page)
 
 //load FAQ page
-router.get('/praia-limpa/FAQ', campaignController.get_FAQ_page)
+// router.get('/praia-limpa/FAQ', campaignController.get_FAQ_page)
 
 //load FAQ page
-router.get('/praia-limpa/parceiros', campaignController.get_partners_page)
+// router.get('/praia-limpa/parceiros', campaignController.get_partners_page)
 
 //enter system interface
 router.get('/system/list', campaignController.system_get_list)

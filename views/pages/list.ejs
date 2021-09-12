@@ -1,4 +1,4 @@
-<%- include('../partials/header'); %>
+<%- include('../partials/systemHeader'); %>
 
     <main class="container">
         <div class="row">
@@ -50,13 +50,13 @@
                                         </td>
                                         <td class="col-2">
                                             <div class="row">
-                                                <form class="form col-6 p-0" action="/system/editItem/<%= element._id %>"
-                                                    method="POST">
+                                                <form class="form col-6 p-0"
+                                                    action="/system/editItem/<%= element._id %>" method="POST">
                                                     <button type="submit"
                                                         class="btn btn-warning form-group col-11">Edit</button>
                                                 </form>
-                                                <form class="form col-6 p-0" action="/system/deleteItem/<%= element._id %>"
-                                                    method="POST">
+                                                <form class="form col-6 p-0"
+                                                    action="/system/deleteItem/<%= element._id %>" method="POST">
                                                     <button type="submit"
                                                         class="btn btn-danger form-group col-11">Delete</button>
                                                 </form>
@@ -67,30 +67,10 @@
 
                                         <% }%>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </tbody>
                 </table>
             </div>
         </div>
     </main>
 
-    <%- include('../partials/footer'); %>
+    <%- include('../partials/systemFooter'); %>
