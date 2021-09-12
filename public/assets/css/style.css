@@ -265,9 +265,8 @@ html {
     border-bottom: 1px solid var(--vermelho-predominante)!important;
 }
 
-.nav-link { 
+.nav-link-color { 
     color:var(--vermelho-predominante)!important;
-    width: calc(936px / 4);
 }
 
 .nav-tabs .nav-link.active {
