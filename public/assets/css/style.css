@@ -318,7 +318,9 @@ html {
     .collapse,
     .navbar {
         background-color: white !important;
+        padding-left: 1vw;
     }
+    
 
 }
 
