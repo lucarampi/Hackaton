@@ -243,7 +243,7 @@ html {
 
 .fa-home,
 .fa-search,
-.fa-envelope,
+.fa-handshake,
 .fa-users,
 .fa-question {
     margin: 5px;
@@ -320,7 +320,7 @@ html {
     background-color: var(--vermelho-predominante);
     margin: 0 auto;
     height: 2px;
-    width: 100px;
+    width: 7vw;
 }
 
 .form-home-page {
