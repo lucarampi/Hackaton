@@ -22,6 +22,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.subtitle {
+    color: #ff5757;
+}
+
 
 /*** 
 =============================================
@@ -90,7 +94,6 @@ html {
 }
 
 .working-area .single-working-item .icon-box .count h3 {
-    color: #252525;
     font-size: 18px;
     line-height: 45px;
     font-weight: 700;
@@ -98,7 +101,6 @@ html {
 }
 
 .working-area .single-working-item .text-box h3 {
-    color: #252525;
     font-size: 25px;
     font-weight: 500;
     text-transform: capitalize;
@@ -212,7 +214,7 @@ html {
 =============================================
 ***/
 
-.border-boder {
+.border-bottom-titles {
     background-color: var(--vermelho-predominante);
     margin: 0 auto;
     height: 2px;
