@@ -1,5 +1,5 @@
 //Start function Jquery scroll 400px 
-
+$("#firula")[0].style.backgroundColor = "rgba(255, 255, 255, 0.35)";
 $(window).scroll((function () {
     console.log($("#myCarousel").height())
     if ($(window).scrollTop() > $("#myCarousel").height()) {
@@ -11,11 +11,8 @@ $(window).scroll((function () {
     let ref = $("#myCarousel").height()*(proportion)
     if ($(window).scrollTop() > $("#myCarousel").height() - ref) {
         $("#firula")[0].style.backgroundColor = "white";
-        $("#firula")[0].style.opacity = "1";
-
     } else {
-        $("#firula")[0].style.backgroundColor = "white";
-        $("#firula")[0].style.opacity = "0.5";
+        $("#firula")[0].style.backgroundColor = "rgba(255, 255, 255, 0.35)";
     }
 }));
 
