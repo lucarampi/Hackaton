@@ -9,7 +9,7 @@ router.get('/', campaignController.redirect)
 router.get('/praia-limpa', campaignController.get_main_page)
 
 //load FAQ page
-// router.get('/praia-limpa/FAQ', campaignController.get_FAQ_page)
+router.get('/faq', campaignController.get_FAQ_page)
 
 //load FAQ page
 // router.get('/praia-limpa/parceiros', campaignController.get_partners_page)

@@ -13,7 +13,7 @@ exports.get_partners_page = (req, res) => {
     res.render('views/pages/partners')
 }
 exports.get_FAQ_page = (req, res) => {
-    res.render('views/pages/FAQ')
+    res.render('views/pages/faq-page')
 }
 
 exports.post_add_item = (req, res) => {
