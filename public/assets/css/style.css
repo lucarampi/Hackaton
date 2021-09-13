@@ -329,12 +329,11 @@ html {
 
 @media screen and (max-width: 992px) {
 
-    .collapse,
+    .collapse,.nav-link-menu::after,
     .navbar {
-        background-color: white !important;
-        padding-left: 1vw;
+        background-color: white;
+        padding-left: 1vw;  
     }
-    
 
 }
 
