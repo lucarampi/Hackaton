@@ -11,8 +11,11 @@ $(window).scroll((function () {
     let ref = $("#myCarousel").height()*(proportion)
     if ($(window).scrollTop() > $("#myCarousel").height() - ref) {
         $("#firula")[0].style.backgroundColor = "white";
+        $("#firula")[0].style.opacity = "1";
+
     } else {
-        $("#firula")[0].style.backgroundColor = "transparent";
+        $("#firula")[0].style.backgroundColor = "white";
+        $("#firula")[0].style.opacity = "0.5";
     }
 }));
 
